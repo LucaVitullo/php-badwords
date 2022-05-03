@@ -6,8 +6,8 @@ Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
 */
 $name = 'php';
 $paragrafo = 'ciao mi chiamo ' . $name;
-$censura = $_GET['php'];
-$sostituto = str_replace($name, "***", $paragrafo);
+$censura = $_GET['ban'];
+$sostituto = str_replace($censura, "***", $paragrafo);
 ?>
 <h1>Parola Originale</h1>
 <h3><?php echo $paragrafo ?></h3>
